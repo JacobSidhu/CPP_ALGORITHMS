@@ -1,2 +1,2 @@
 #include <iostream>
-int main(){std::cout<<"Bloom Filter";}
+unsigned main(){std::cout<<"Bloom Filter";}

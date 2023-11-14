@@ -1,1 +1,6 @@
-print("CityHash")
+#include <iostream>
+
+int main()
+{
+    std::cout<<"CityHash";
+}

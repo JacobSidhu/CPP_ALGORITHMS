@@ -1,19 +1,18 @@
-#Value to Find
-KEY_VALUE = 57
-#defining linear_Search Algorithms
-def linear_Search(arr,key):
-    #Iterating in the list
-    for i in range(len(arr)):
-        if arr[i]==key: return i #if found returning Index
-    return -1# If not found returning Null value
+#include <iostream>
+//declaring linearSearch algorithm
+int linearSearch(unsigned* array, unsigned size, int key);
 
-#-------Main--------
-#List of random numbers
-list_array = [1,46,57,4,35,6,3,6,7,44,6]
+int main()
+{
+    unsigned arr[10] = { 2,43,34,35,354,44,32,2,23,4 };
+    std::cout << "-Key is at index -->>  " << linearSearch(arr, 10, 35);
+}
 
-result = linear_Search(list_array,KEY_VALUE)
-
-if result < 0:
-    print (f"{KEY_VALUE} is Not Found in List")
-else:
-    print(f"{KEY_VALUE} found at index {result} in List")
+int linearSearch(unsigned* array, unsigned size, int key)
+{
+    for (int i = 0; i < size; i++)
+    {
+        if (array[i] == key) return i;
+    }
+    return -1;
+}
