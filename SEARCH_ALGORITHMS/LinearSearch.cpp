@@ -14,5 +14,5 @@ int linearSearch(unsigned* array, unsigned size, int key)
     {
         if (array[i] == key) return i;
     }
-    return -1;
+    return -1;//k
 }
