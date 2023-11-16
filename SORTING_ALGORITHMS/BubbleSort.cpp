@@ -13,12 +13,15 @@ int main()
     int unSortedArray[arraySize] = { 54,12,50,71,23,19,11,10,22,13 };
     //before BubbleSort
     std::cout << "Before : ";
-    for (auto x : unSortedArray)std::cout << x <<", ";
+    for (auto elements : unSortedArray)std::cout << elements <<", ";
+    std::cout << "\n";//adding line break
+
     //Implimenting BubbleSort on unSortedArray
     BubbleSort(unSortedArray, arraySize);
+    
     //after Sorting
-    std::cout << "\n\nAfter : ";
-    for (auto z : unSortedArray)std::cout << z << ", ";
+    std::cout << "\nAfter : ";
+    for (auto elements : unSortedArray)std::cout << elements << ", ";
     std::cout << "\n";//adding line break
 }
 
